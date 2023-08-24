@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 2vh;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 4vh;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(122, 102, 102);
+  cursor: pointer;
+  text-shadow: 0px 3px 15px rgba(155, 8, 64, 0.5);
+}
+nav ul li a:hover {
+  text-shadow: 0px 3px 15px rgba(229, 158, 6, 0.5);
+}
+
+nav {
+  background-color: beige;
+  margin: 10px 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(155, 8, 64, 0.5);
+}
+#container {
+  height: 80vh;
+  background-color: bisque;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px;
+  padding: 10px;
+  box-shadow: 0px 3px 15px rgba(155, 8, 64, 0.5);
+}
+h1 {
+  padding: 20px;
+  text-align: center;
+  color: brown;
+  text-transform: capitalize;
+  font-size: 5vh;
+}
+#converter {
+  display: flex;
+  justify-content: space-around;
+}
+#Currency {
+  width: 200px;
+}
+#convertervalue {
+  display: flex;
+  justify-content: space-around;
+}
+#converter li {
+  list-style: none;
+  padding: 10px;
+  font-size: 4vh;
+}
+select {
+  border: none;
+  border-radius: 5px;
+  font-size: 2vh;
+}
+input {
+  width: 200px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 2vh;
+}
+#btndiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+#Convertbtn {
+  font-size: 4vh;
+  margin-top: 100px;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  background-color: rgb(185, 233, 217);
+  border-radius: 200px;
+  box-shadow: 0px 3px 15px rgba(155, 8, 64, 0.5);
+  cursor: pointer;
+}
+#Convertbtn:hover {
+  box-shadow: 0px 3px 15px rgba(229, 158, 6, 0.5);
+}
+footer {
+  border: 1px solid white;
+  text-align: center;
+  background-color: beige;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 2vh;
+  margin: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(155, 8, 64, 0.5);
+}
+#resultdiv{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
+    height: 30vh;
+    color:rgb(89, 118, 108);
+    padding: 10px;
+    box-shadow: 2px 5px 15px 
+}

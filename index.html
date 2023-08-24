@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency converter</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Contact Us">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="container">
+      <h1>Currency Converter</h1>
+      <ul id="converter">
+        <li>Amount</li>
+        <li>From</li>
+        <li>To</li>
+      </ul>
+      <div id="convertervalue">
+        <input type="number" id="amount" />
+        <select name="Currency" id="from">
+          <option value="USD">USD</option>
+          <option value="INR">INR</option>
+          
+        </select>
+        <select name="Currency" id="to">
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+        
+        </select>
+      </div>
+      <div id="btndiv">
+        <button id="Convertbtn">Convert</button>
+      </div>
+      <div id="resultdiv">
+        <h2 id="result"></h2>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright Prince Singh &copy; 2023</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
