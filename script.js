@@ -22,15 +22,15 @@ async function getresult() {
     });
 
   resultdiv.style.display = "flex";
-  if (amount.value === "") {
-    result.innerHTML = "Enter Amount to Convert ";
-  } else if (from.value === "USD") {
-    result.innerHTML = `${(+amount.value * currency.data[to.value]).toFixed(
-      2
-    )}Indian Rupee`;
+  if (amount.value === "") { result.innerHTML = "Enter Amount to Convert ";
+  } else if (from.value === "USD"&& to.value === "INR") {
+    result.innerHTML = `${(+amount.value * currency.data[to.value]).toFixed(2)}Indian Rupee`;
   } else if (from.value === "INR" && to.value === "USD") {
-    result.innerHTML = `${(+amount.value / currency.data[from.value]).toFixed(
-      2
-    )} United States Dollar`;
+    result.innerHTML = `${(+amount.value / currency.data[from.value]).toFixed(2)} United States Dollar`    ;
+  }else if(from.value === "USD" && to.value === "USD"){
+    result.innerHTML = `${+amount.value } United States Dollar`
+  }
+  else if(from.value === "INR" && to.value === "INR"){
+    result.innerHTML = `${+amount.value } Indian Rupee`
   }
 }
